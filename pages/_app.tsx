@@ -1,9 +1,16 @@
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider, ColorModeProvider } from '@chakra-ui/react';
+import { AppProps } from 'next/app';
 
-function RolanDev({ Component, pageProps }: any) {
+function RolanDev({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider>
-      <Component {...pageProps} />
+      <ColorModeProvider
+        options={{
+          useSystemColorMode: true,
+        }}
+      >
+        <Component {...pageProps} />
+      </ColorModeProvider>
     </ChakraProvider>
   );
 }
