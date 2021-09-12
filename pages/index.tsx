@@ -10,17 +10,28 @@ import {
   Fade,
   Icon,
   Link,
+  keyframes,
 } from '@chakra-ui/react';
 import { IoLogoLinkedin, IoLogoInstagram, IoLogoGithub } from 'react-icons/io';
+import { TargetAndTransition } from 'framer-motion';
 
-// TODO: Animate gradient??
-// Proper meta tags
+// TODO: Proper meta tags
 
 const nameSizes = ['4xl', '6xl'];
 const iconSizeProps = {
   w: [5, 8],
   h: [5, 8],
 };
+const textTransition: TargetAndTransition = { skew: 8, translateY: -10 };
+
+const hueRotate = keyframes`
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(-360deg);
+  }
+`;
 
 const Home: NextPage = () => {
   return (
@@ -43,16 +54,24 @@ const Home: NextPage = () => {
               in
               offsetY="20px"
               delay={0.5}
-              whileHover={{ scale: 0.9 }}
+              whileHover={textTransition}
+              whileTap={textTransition}
             >
               <Text fontSize={nameSizes}>Tyler</Text>
             </SlideFade>
-            <SlideFade in offsetY="20px" delay={1} whileHover={{ scale: 0.9 }}>
+            <SlideFade
+              in
+              offsetY="20px"
+              delay={1}
+              whileHover={textTransition}
+              whileTap={textTransition}
+            >
               <Text
                 fontSize={nameSizes}
                 bgGradient="linear-gradient(109deg, rgba(191,87,0,1) 0%, rgba(229,50,56,1) 22%, rgba(40,103,178,1) 100%)"
                 bgClip="text"
                 fontWeight="bold"
+                animation={`${hueRotate} 10s infinite linear`}
               >
                 Rolan
               </Text>
@@ -61,7 +80,8 @@ const Home: NextPage = () => {
               in
               offsetY="20px"
               delay={1.5}
-              whileHover={{ scale: 0.9 }}
+              whileHover={{ skew: 8, translateY: -10 }}
+              whileTap={textTransition}
             >
               <Text fontSize={nameSizes}>Corley</Text>
             </SlideFade>
