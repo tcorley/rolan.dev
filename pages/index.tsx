@@ -10,8 +10,8 @@ import {
   Fade,
   Icon,
   Link,
+  keyframes,
 } from '@chakra-ui/react';
-import { keyframes } from '@emotion/react';
 import { IoLogoLinkedin, IoLogoInstagram, IoLogoGithub } from 'react-icons/io';
 import { TargetAndTransition } from 'framer-motion';
 
