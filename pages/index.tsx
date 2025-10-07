@@ -13,6 +13,7 @@ import {
   keyframes,
 } from '@chakra-ui/react';
 import { IoLogoLinkedin, IoLogoInstagram, IoLogoGithub } from 'react-icons/io';
+import { FaBluesky } from "react-icons/fa6";
 import { TargetAndTransition } from 'framer-motion';
 
 // TODO: Proper meta tags
@@ -92,6 +93,11 @@ const Home: NextPage = () => {
             </Text>
           </Fade>
           <Fade in delay={2}>
+            <Text px={8} textAlign="center" as="mark">
+              👋 Howdy, React Conf 2025.
+            </Text>
+          </Fade>
+          <Fade in delay={2}>
             <HStack mt={4}>
               <Link isExternal href="https://linkedin.com/in/tcorley">
                 <Icon as={IoLogoLinkedin} {...iconSizeProps} />
@@ -101,6 +107,9 @@ const Home: NextPage = () => {
               </Link>
               <Link isExternal href="https://github.com/tcorley">
                 <Icon as={IoLogoGithub} {...iconSizeProps} />
+              </Link>
+              <Link isExternal href="https://bsky.app/profile/corley.rocks">
+                <Icon as={FaBluesky} {...iconSizeProps} />
               </Link>
             </HStack>
           </Fade>

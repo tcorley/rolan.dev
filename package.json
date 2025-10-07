@@ -16,7 +16,7 @@
     "next": "^13.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.6.0"
+    "react-icons": "^5.5.0"
   },
   "devDependencies": {
     "@chakra-ui/portal": "^2.0.10",
