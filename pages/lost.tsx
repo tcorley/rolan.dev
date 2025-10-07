@@ -54,7 +54,7 @@ const Lost: NextPage = () => {
           isExternal
           href="https://docs.google.com/forms/d/e/1FAIpQLSdlfOOCq4JQi4hVbEI0wirvLBb4jhSkCul4RZY7HPSDNpUzQA/viewform?usp=sf_link"
         >
-          <Button leftIcon={<Icon as={IoLogoGoogle} />}>Google Form</Button>
+          <Button leftIcon={<Icon as={IoLogoGoogle as any} />}>Google Form</Button>
         </Link>
       </Box>
     </div>

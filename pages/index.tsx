@@ -100,16 +100,16 @@ const Home: NextPage = () => {
           <Fade in delay={2}>
             <HStack mt={4}>
               <Link isExternal href="https://linkedin.com/in/tcorley">
-                <Icon as={IoLogoLinkedin} {...iconSizeProps} />
+                <Icon as={IoLogoLinkedin as any} {...iconSizeProps} />
               </Link>
               <Link isExternal href="https://instagram.com/_corley_">
-                <Icon as={IoLogoInstagram} {...iconSizeProps} />
+                <Icon as={IoLogoInstagram as any} {...iconSizeProps} />
               </Link>
               <Link isExternal href="https://github.com/tcorley">
-                <Icon as={IoLogoGithub} {...iconSizeProps} />
+                <Icon as={IoLogoGithub as any} {...iconSizeProps} />
               </Link>
               <Link isExternal href="https://bsky.app/profile/corley.rocks">
-                <Icon as={FaBluesky} {...iconSizeProps} />
+                <Icon as={FaBluesky as any} {...iconSizeProps} />
               </Link>
             </HStack>
           </Fade>
