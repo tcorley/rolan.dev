@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="rolan.dev">
+  <defs>
+    <linearGradient id="rolanGradient" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#BF5700" />
+      <stop offset="0.42" stop-color="#E53238" />
+      <stop offset="1" stop-color="#2867B2" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#rolanGradient)" />
+  <path
+    fill="#FFFFFF"
+    d="M19 51V13h18.5c8 0 13.2 4.7 13.2 12.1 0 5.7-3.2 9.8-8.4 11.4L52 51H39.8l-8.3-12.9H29V51H19Zm10-21.4h7.3c3 0 4.9-1.7 4.9-4.4s-1.9-4.5-4.9-4.5H29v8.9Z"
+  />
+</svg>

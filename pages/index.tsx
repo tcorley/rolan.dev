@@ -10,8 +10,8 @@ import {
   Fade,
   Icon,
   Link,
-  keyframes,
 } from '@chakra-ui/react';
+import { keyframes } from '@emotion/react';
 import { IoLogoLinkedin, IoLogoInstagram, IoLogoGithub } from 'react-icons/io';
 import { FaBluesky } from "react-icons/fa6";
 import { TargetAndTransition } from 'framer-motion';
@@ -40,7 +40,8 @@ const Home: NextPage = () => {
       <Head>
         <title>rolan.dev</title>
         <meta name="description" content="Tyler's Page" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </Head>
       <Box
         display="flex"

@@ -1,7 +1,8 @@
 import React from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { Box, Button, Icon, keyframes, Link, Text } from '@chakra-ui/react';
+import { Box, Button, Icon, Link, Text } from '@chakra-ui/react';
+import { keyframes } from '@emotion/react';
 import { IoLogoGoogle } from 'react-icons/io';
 
 // TODO: Add description of page
@@ -28,7 +29,8 @@ const Lost: NextPage = () => {
       <Head>
         <title>rolan.dev</title>
         <meta name="description" content="Tyler's Page" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </Head>
       <Box
         display="flex"
